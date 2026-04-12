@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --forest: #1B4332;
+  --forest-mid: #2D6A4F;
+  --forest-light: #40916C;
+  --sage: #74C69D;
+  --mint: #B7E4C7;
+  --cream: #FEFCF3;
+  --warm-white: #FFFDF7;
+  --sand: #F5F0E8;
+  --stone: #8D8578;
+  --earth: #5C534A;
+  --ink: #1A1714;
+  --gold: #C8973E;
+  --gold-light: rgba(200, 151, 62, 0.08);
+
+  --shadow-sm: 0 1px 3px rgba(26, 23, 20, 0.04), 0 1px 2px rgba(26, 23, 20, 0.06);
+  --shadow-md: 0 4px 16px rgba(26, 23, 20, 0.06), 0 2px 6px rgba(26, 23, 20, 0.04);
+  --shadow-lg: 0 12px 40px rgba(26, 23, 20, 0.08), 0 4px 12px rgba(26, 23, 20, 0.04);
+
+  --radius: 14px;
+  --radius-lg: 20px;
+  --radius-full: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--warm-white);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+/* Custom utility classes */
+.text-forest { color: var(--forest); }
+.text-forest-mid { color: var(--forest-mid); }
+.text-earth { color: var(--earth); }
+.text-stone { color: var(--stone); }
+.text-ink { color: var(--ink); }
+.text-gold { color: var(--gold); }
+
+.bg-forest { background-color: var(--forest); }
+.bg-forest-mid { background-color: var(--forest-mid); }
+.bg-forest-light { background-color: var(--forest-light); }
+.bg-sage { background-color: var(--sage); }
+.bg-sand { background-color: var(--sand); }
+.bg-cream { background-color: var(--cream); }
+.bg-warm-white { background-color: var(--warm-white); }
+
+.shadow-soft-sm { box-shadow: var(--shadow-sm); }
+.shadow-soft-md { box-shadow: var(--shadow-md); }
+.shadow-soft-lg { box-shadow: var(--shadow-lg); }
+
+.rounded-soft { border-radius: var(--radius); }
+.rounded-soft-lg { border-radius: var(--radius-lg); }
+.rounded-soft-full { border-radius: var(--radius-full); }
