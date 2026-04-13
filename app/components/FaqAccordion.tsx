@@ -53,7 +53,7 @@ export default function FaqAccordion() {
             >
               <span>{item.q}</span>
               <ChevronDown
-                className={`w-5 h-5 text-forest flex-shrink-0 ml-4 transition-transform duration-200 ${
+                className={`w-5 h-5 text-forest shrink-0 ml-4 transition-transform duration-200 ${
                   isOpen ? "rotate-180" : ""
                 }`}
               />

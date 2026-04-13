@@ -80,7 +80,7 @@ export default function WaitlistForm() {
 
   if (status === "success") {
     return (
-      <div className="max-w-[620px] mx-auto bg-white rounded-soft-lg p-12 shadow-soft-md border border-black/[0.04] text-center">
+      <div className="max-w-[620px] mx-auto bg-white rounded-soft-lg p-12 shadow-soft-md border border-black/4 text-center">
         <CheckCircle2 className="w-16 h-16 text-forest-light mx-auto mb-4" />
         <h2 className="font-display text-[28px] mb-3">{"You're on the list"}</h2>
         <p className="text-base text-earth leading-[1.7] max-w-md mx-auto">
@@ -101,7 +101,7 @@ export default function WaitlistForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-[620px] mx-auto bg-white rounded-soft-lg p-12 shadow-soft-md border border-black/[0.04]"
+      className="max-w-[620px] mx-auto bg-white rounded-soft-lg p-12 shadow-soft-md border border-black/4"
     >
       <h2 className="font-display text-[28px] mb-2 text-center">Reserve Your Seat</h2>
       <p className="text-sm text-earth text-center mb-8 leading-[1.6]">
@@ -140,7 +140,7 @@ export default function WaitlistForm() {
         <div className="flex flex-col gap-2">
           {["Yes, less than 2 years", "Yes, 2 to 5 years", "Yes, 5+ years", "No, but personal connection to addiction", "Prefer not to say"].map((opt) => (
             <label key={opt} className={radioOptClass}>
-              <input type="radio" name="recovery" className="accent-[var(--forest)]" checked={form.recoveryStatus === opt} onChange={() => update("recoveryStatus", opt)} />
+              <input type="radio" name="recovery" className="accent-(--forest)" checked={form.recoveryStatus === opt} onChange={() => update("recoveryStatus", opt)} />
               {opt}
             </label>
           ))}
@@ -166,7 +166,7 @@ export default function WaitlistForm() {
         <div className="flex flex-col gap-2">
           {["Weekday evenings", "Saturdays", "Sundays", "Flexible: any of the above"].map((opt) => (
             <label key={opt} className={radioOptClass}>
-              <input type="checkbox" className="accent-[var(--forest)]" checked={form.preferredTimes.includes(opt)} onChange={() => toggleTime(opt)} />
+              <input type="checkbox" className="accent-(--forest)" checked={form.preferredTimes.includes(opt)} onChange={() => toggleTime(opt)} />
               {opt}
             </label>
           ))}
