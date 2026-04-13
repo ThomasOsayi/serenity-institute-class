@@ -138,7 +138,7 @@ export default function WaitlistForm() {
       <div className="mb-5">
         <label className={labelClass}>Are you in personal recovery?</label>
         <div className="flex flex-col gap-2">
-          {["Yes — less than 2 years", "Yes — 2 to 5 years", "Yes — 5+ years", "No, but personal connection to addiction", "Prefer not to say"].map((opt) => (
+          {["Yes, less than 2 years", "Yes, 2 to 5 years", "Yes, 5+ years", "No, but personal connection to addiction", "Prefer not to say"].map((opt) => (
             <label key={opt} className={radioOptClass}>
               <input type="radio" name="recovery" className="accent-[var(--forest)]" checked={form.recoveryStatus === opt} onChange={() => update("recoveryStatus", opt)} />
               {opt}
@@ -155,7 +155,7 @@ export default function WaitlistForm() {
           <option>Counselor / therapist</option>
           <option>Healthcare professional</option>
           <option>Social worker</option>
-          <option>Career change — currently in another field</option>
+          <option>Career change (currently in another field)</option>
           <option>Student</option>
           <option>Other</option>
         </select>
@@ -164,7 +164,7 @@ export default function WaitlistForm() {
       <div className="mb-5">
         <label className={labelClass}>Preferred class times (check all that apply)</label>
         <div className="flex flex-col gap-2">
-          {["Weekday evenings", "Saturdays", "Sundays", "Flexible — any of the above"].map((opt) => (
+          {["Weekday evenings", "Saturdays", "Sundays", "Flexible: any of the above"].map((opt) => (
             <label key={opt} className={radioOptClass}>
               <input type="checkbox" className="accent-[var(--forest)]" checked={form.preferredTimes.includes(opt)} onChange={() => toggleTime(opt)} />
               {opt}
@@ -219,7 +219,7 @@ export default function WaitlistForm() {
       </button>
 
       <p className="text-[11px] text-stone text-center mt-3.5 leading-[1.6]">
-        {"Your information is confidential. Joining the waitlist is not a commitment to enroll — we'll share program details, pricing, and answer your questions before you decide. Serenity Institute is an independent training program; the CIP credential is issued by the Pennsylvania Certification Board upon meeting all their requirements."}
+        {"Your information is confidential. Joining the waitlist is not a commitment to enroll. We'll share program details, pricing, and answer your questions before you decide. Serenity Institute is an independent training program; the CIP credential is issued by the Pennsylvania Certification Board upon meeting all their requirements."}
       </p>
     </form>
   );

@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: "How much does the course cost?",
-    a: "Final pricing for the founding cohort will be shared with waitlist members first. We're committed to keeping the program accessible — pricing will reflect the small cohort size and live instruction format. Payment plans will be available.",
+    a: "Final pricing for the founding cohort will be shared with waitlist members first. We're committed to keeping the program accessible. Pricing will reflect the small cohort size and live instruction format. Payment plans will be available.",
   },
   {
     q: "Do I need to be in recovery to take this course?",
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "When does the first cohort start?",
-    a: "We're finalizing the launch date now. Founding cohort waitlist members will be the first to know — and will have first access to seats before we open registration publicly.",
+    a: "We're finalizing the launch date now. Founding cohort waitlist members will be the first to know, and they will have first access to seats before we open registration publicly.",
   },
   {
     q: "Is this fully online?",
@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "What happens after I graduate?",
-    a: "Graduates receive a certificate of completion documenting your training hours, ongoing support as you pursue full credentialing, and priority listing on Recovery Bridge — our compliant marketplace connecting families with certified intervention professionals.",
+    a: "Graduates receive a certificate of completion documenting your training hours, ongoing mentorship as you pursue full CIP credentialing through PCB, and guidance on building your own practice, including pricing, contracts, insurance navigation, and ethical referral development.",
   },
 ];
 
